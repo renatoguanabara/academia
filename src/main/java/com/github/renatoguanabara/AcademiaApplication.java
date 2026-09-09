@@ -1,4 +1,4 @@
-package com.github.renatoguanabara.academia;
+package com.github.renatoguanabara;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

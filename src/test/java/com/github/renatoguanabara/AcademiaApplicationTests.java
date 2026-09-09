@@ -1,4 +1,4 @@
-package com.github.renatoguanabara.academia;
+package com.github.renatoguanabara;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

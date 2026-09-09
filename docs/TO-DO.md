@@ -1,8 +1,8 @@
 # TO-DO
 
-- [ ] Organizar estrutura de pastas do projeto
-- [ ] Criar DTOs para os dominios
-- [ ] Criar Controllers para as jornadas
+- [X] Organizar estrutura de pastas do projeto
+- [X] Criar DTOs para os dominios
+- [X] Criar Controllers para as jornadas
 - [ ] Criar Documentação de API com Swagger
 - [ ] Criar Services para as jornadas
 - [ ] Criar Repositories para os dominios
