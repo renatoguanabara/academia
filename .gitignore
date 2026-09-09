@@ -1,62 +1,63 @@
-<<<<<<< HEAD
-HELP.md
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Build directories
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-=======
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
-*.iml
-*.ipr
-checkstyle-idea.xml
-misc.xml
-
-### Eclipse ###
->>>>>>> 58ff0ab2442f0363ff8ba61209983076e5f721fa
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-<<<<<<< HEAD
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-=======
->>>>>>> 58ff0ab2442f0363ff8ba61209983076e5f721fa
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+out/
 
-### VS Code ###
-.vscode/
-<<<<<<< HEAD
-=======
+# Maven
+.mvn/wrapper/maven-wrapper.jar
 
-### Mac OS ###
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# IntelliJ workspace XML (evita arquivos de configuração local)
+workspace.xml
+tasks.xml
+usage.statistics.xml
+dictionaries/
+shelf/
+
+# OS generated files (Linux/Windows)
+*~
+.fuse_hidden*
+.directory
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS generated files
 .DS_Store
->>>>>>> 58ff0ab2442f0363ff8ba61209983076e5f721fa
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
