@@ -1,17 +1,15 @@
 package com.github.renatoguanabara.service;
 
 
-import com.github.renatoguanabara.domain.Aluno;
+
 import com.github.renatoguanabara.dto.CriarAlunoRequest;
 import com.github.renatoguanabara.dto.CriarAlunoResponse;
 import com.github.renatoguanabara.entity.AlunoEntity;
 import com.github.renatoguanabara.mapper.AlunoMapper;
 import com.github.renatoguanabara.repository.AlunoRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
@@ -34,8 +32,8 @@ public class AlunoService {
         return new CriarAlunoResponse(aluno.nome());
     }
 
-    @Transactional
-    public Aluno salvarAluno(Aluno aluno) {
+
+    public CriarAlunoResponse salvarAluno(CriarAlunoRequest aluno) {
         // 1. Converte o objeto de Domínio para a Entidade do JPA
         AlunoEntity entity = alunoMapper.toEntity(aluno);
 
@@ -43,7 +41,7 @@ public class AlunoService {
         AlunoEntity entitySalva = repository.save(entity);
 
         // 3. Converte a Entidade salva de volta para o Domínio e retorna
-        return alunoMapper.toDomain(entitySalva);
+        return alunoMapper.toResponse(entitySalva);
     }
 
 }

@@ -6,8 +6,8 @@
 - [x] Criar Documentação de API com Swagger
 - [x] Criar Services para as jornadas
 - [x] Criar Repositories para os dominios
-- [ ] Criar as Entities para os dominios
-- [ ] Criar os Mappers
+- [x] Criar as Entities para os dominios in progress
+- [X] Criar os Mappers in progress
 - [ ] Criar Exceptions para os fluxos de negócio
 - [ ] Criar camada de log estruturado
 - [ ] Configurar profile do projeto para desenvolvimento e produção
